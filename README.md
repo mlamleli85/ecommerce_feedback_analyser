@@ -1,10 +1,10 @@
-# Shopping Feedback Processor
+# eCommerce Feedback Analyser
 
-Shopping Feedback Processor is a terminal-based Python tool that runs inside the Code Institute mock console via Heroku.
+eCommerce Feedback Analyser is a terminal-based Python tool that runs inside the Code Institute mock console via Heroku.
 
 This application offers users an easy way to submit review data about their latest ecommerce transactions, tracking department metrics, usability ratings, and referral choices. The system validates entries on the fly and logs them directly to a connected Google Sheets spreadsheet.
 
-[Here is the live version of my project](INSERT_YOUR_LIVE_HEROKU_LINK_HERE)
+[This is the live version of my project](INSERT_YOUR_LIVE_HEROKU_LINK_HERE)
 
 ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/9484db2b0f6942a07de31cef166718367715bd69/Screenshot1.png)
 
@@ -25,6 +25,8 @@ The software initiates a secure connection with the cloud database immediately u
 
 4. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
 5. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
+
+   ![image alt]()
 
 ---
 
