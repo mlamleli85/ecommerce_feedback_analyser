@@ -21,11 +21,9 @@ class ECommerceAnalyser:
 
     def __init__(self):
         self.valid_categories = [
-            "Product Search",
-            "Checkout",
-            "Customer Support",
-            "Returns"
+            "Product Search", "Checkout", "Customer Support", "Returns"
         ]
+
         self.worksheet = SHEET.worksheet("feedback")
         print("Successfully connected to the Google Sheets database!\n")
 
@@ -47,6 +45,32 @@ class ECommerceAnalyser:
             "Delivery": delivery,
             "Recommend": recommend
         }
+
+    def validate_feedback(self, data):
+        """
+        Checks if user input is valid and meets the criteria.
+        """
+
+        if data["Category"] not in self.valid_categories:
+            print("Invalid category!")
+            print(f"Please choose from: {self.valid_categories}")
+            return False
+
+        try:
+            ease_rating = int(data["Ease"])
+            delivery_rating = int(data["Delivery"])
+            if not (1 <= ease_rating <= 5) or not (1 <= delivery_rating <= 5):
+                print("Ratings must be between 1 and 5!")
+                return False
+        except ValueError:
+            print("Ratings must be numeric!")
+            return False
+
+        if data["Recommend"].lower() not in ["yes", "no"]:
+            print("Recommend must be 'Yes' or 'No'!")
+            return False
+
+        return True
 
 
 def run_survey_app():
