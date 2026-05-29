@@ -17,7 +17,7 @@ The software initiates a secure connection with the cloud database immediately u
 1. The user is greeted and presented with a list of store categories open for review.
 2. The interface prompts the user for four specific data points: Category, Ease of Use rating (1-5), Delivery rating (1-5), and a referral confirmation (Yes/No).
 
-![image alt]()
+![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/81016f5a98a264e5035ed4d0e3d715922032a334/Screenshot3.png)
    
 4. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
 5. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
