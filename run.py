@@ -84,7 +84,17 @@ def run_survey_app():
 
     analyser = ECommerceAnalyser()
 
-    user_data = analyser.get_user_feedback()
+    while True:
+        """
+        Gets user feedback and validates it. If valid, it breaks the loop and ends the program.
+        """
+        user_data = analyser.get_user_feedback()
+
+        if analyser.validate_feedback(user_data):
+            print("\n--- Input Successful! ---")
+            break
+
+        print("Please enter feedback again.\n")
 
     print("\n--- Thank you for your feedback! ---")
     print(f"Data received: {user_data}")
