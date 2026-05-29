@@ -19,9 +19,12 @@ The software initiates a secure connection with the cloud database immediately u
 
 ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/81016f5a98a264e5035ed4d0e3d715922032a334/Screenshot3.png)
    
-4. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
-5. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
-6. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
+3. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
+
+![image alt]()
+
+4. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
+5. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
 
 ---
 
