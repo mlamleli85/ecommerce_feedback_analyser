@@ -31,7 +31,7 @@ class ECommerceAnalyser:
         """
         Asks the user to type in their shopping feedback answers
         """
-        print("--- Please Provide Your Feedback ---")
+        print("--- Please Provide Your Feedback ---\n")
         print(f"Available Categories to review: {self.valid_categories}\n")
 
         category = input("Enter experience category: ").strip()
