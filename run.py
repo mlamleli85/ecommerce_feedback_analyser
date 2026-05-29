@@ -72,6 +72,22 @@ class ECommerceAnalyser:
 
         return True
 
+    def upload_feedback(self, data):
+        """
+        Converts the feedback dictionary to a list
+        and uploads it to the Google sheet.
+        """
+        print("Uploading feedback to the database...")
+
+        row_to_insert = [
+            data["Category"],
+            data["Ease"],
+            data["Delivery"],
+            data["Recommend"]
+        ]
+        self.worksheet.append_row(row_to_insert)
+        print("Upload successful! Google Sheet updated.\n")
+
 
 def run_survey_app():
     """
@@ -86,7 +102,8 @@ def run_survey_app():
 
     while True:
         """
-        Gets user feedback and validates it. If valid, it breaks the loop and ends the program.
+        Gets user feedback and validates it.
+        If valid, it breaks the loop and ends the program.
         """
         user_data = analyser.get_user_feedback()
 
@@ -95,6 +112,8 @@ def run_survey_app():
             break
 
         print("Please enter feedback again.\n")
+
+    analyser.upload_feedback(user_data)
 
     print("\n--- Thank you for your feedback! ---")
     print(f"Data received: {user_data}")
