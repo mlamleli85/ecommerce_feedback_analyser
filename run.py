@@ -88,6 +88,33 @@ class ECommerceAnalyser:
         self.worksheet.append_row(row_to_insert)
         print("Upload successful! Google Sheet updated.\n")
 
+    def generate_summary_report(self):
+        """
+        Gets the data from the Google sheet and generates a summary report.
+        """
+        print("Generating summary report...")
+
+        all_records = self.worksheet.get_all_records()
+
+        if not all_records:
+            print("No feedback data available to generate a report.\n")
+            return
+
+        total_reviews = len(all_records)
+        total_ease_rating = 0
+
+        for record in all_records:
+            total_ease_rating += int(record["Ease_of_Use"])
+
+        average_ease = total_ease_rating / total_reviews
+
+        print("\n==================================")
+        print("  Summary Report  ")
+        print("==================================")
+        print(f"Total Feedback Submissions: {total_reviews}")
+        print(f"Average Ease of Use Rating: {average_ease:.2f} / 5.0")
+        print("==================================\n")
+
 
 def run_survey_app():
     """
@@ -114,6 +141,8 @@ def run_survey_app():
         print("Please enter feedback again.\n")
 
     analyser.upload_feedback(user_data)
+
+    analyser.generate_summary_report()
 
     print("\n--- Thank you for your feedback! ---")
     print(f"Data received: {user_data}")
