@@ -6,6 +6,8 @@ This application offers users an easy way to submit review data about their late
 
 [Here is the live version of my project](INSERT_YOUR_LIVE_HEROKU_LINK_HERE)
 
+![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/9484db2b0f6942a07de31cef166718367715bd69/Screenshot1.png)
+
 ---
 
 ## How to use
