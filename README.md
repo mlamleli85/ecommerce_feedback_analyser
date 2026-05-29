@@ -4,7 +4,7 @@ eCommerce Feedback Analyser is a terminal-based Python tool that runs inside the
 
 This application offers users an easy way to submit review data about their latest ecommerce transactions, tracking department metrics, usability ratings, and referral choices. The system validates entries on the fly and logs them directly to a connected Google Sheets spreadsheet.
 
-[This is the live version of my project](INSERT_YOUR_LIVE_HEROKU_LINK_HERE)
+[This is the live version of my project]([INSERT_YOUR_LIVE_HEROKU_LINK_HERE](https://ecommerce-feedback-analyser-b4d8903062a5.herokuapp.com/)
 
 ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/9484db2b0f6942a07de31cef166718367715bd69/Screenshot1.png)
 
@@ -26,7 +26,7 @@ The software initiates a secure connection with the cloud database immediately u
 4. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
 5. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
 
-   ![image alt]()
+   ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/c6a3542b3875085f309fb2f8b9c5a10cc18af516/Screenshot5.png)
 
 ---
 
