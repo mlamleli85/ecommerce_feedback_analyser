@@ -15,10 +15,13 @@ This application offers users an easy way to submit review data about their late
 The software initiates a secure connection with the cloud database immediately upon launching.
 
 1. The user is greeted and presented with a list of store categories open for review.
-2. The interface prompts the user for four specific data points: service category, system usability score (1-5), delivery satisfaction rating (1-5), and a referral confirmation (Yes/No).
-3. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
-4. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
-5. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
+2. The interface prompts the user for four specific data points: Category, Ease of Use rating (1-5), Delivery rating (1-5), and a referral confirmation (Yes/No).
+
+![image alt]()
+   
+4. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
+5. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
+6. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
 
 ---
 
