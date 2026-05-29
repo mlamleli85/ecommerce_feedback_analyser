@@ -1,6 +1,6 @@
 # eCommerce Feedback Analyser
 
-eCommerce Feedback Analyser is a terminal-based Python tool that runs inside the Code Institute mock console via Heroku.
+eCommerce Feedback Analyser is a terminal-based Python tool that runs via the Heroku cloud application platform.
 
 This application offers users an easy way to submit review data about their latest ecommerce transactions, tracking department metrics, usability ratings, and referral choices. The system validates entries on the fly and logs them directly to a connected Google Sheets spreadsheet.
 
@@ -55,14 +55,11 @@ The software initiates a secure connection with the cloud database immediately u
 ### Future Features
 
 - Implement user login profiles to separate admin views from customer views.
-- Add sorting filters to break down rating averages by individual store categories.
-- Build a terminal-based visual chart to display rating trends over time.
-
 ---
 
 ## Data Model
 
-I chose an object-oriented design for this application by building an `ECommerceAnalyser` class as the core structural blueprint.
+I chose an object-oriented design for this application by building an `eCommerceAnalyser` class as the core structural blueprint.
 
 The program creates an instance of this analyzer to store application rules (like accepted retail categories), maintain the cloud worksheet link, and provide specific methods to process user entries and display statistics.
 
