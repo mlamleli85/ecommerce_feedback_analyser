@@ -1,10 +1,12 @@
-# Shopping Feedback Processor
+# eCommerce Feedback Analyser
 
-Shopping Feedback Processor is a terminal-based Python tool that runs inside the Code Institute mock console via Heroku.
+eCommerce Feedback Analyser is a terminal-based Python tool that runs via the Heroku cloud application platform.
 
 This application offers users an easy way to submit review data about their latest ecommerce transactions, tracking department metrics, usability ratings, and referral choices. The system validates entries on the fly and logs them directly to a connected Google Sheets spreadsheet.
 
-[Here is the live version of my project](INSERT_YOUR_LIVE_HEROKU_LINK_HERE)
+[This is the live version of my project]([INSERT_YOUR_LIVE_HEROKU_LINK_HERE](https://ecommerce-feedback-analyser-b4d8903062a5.herokuapp.com/)
+
+![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/9484db2b0f6942a07de31cef166718367715bd69/Screenshot1.png)
 
 ---
 
@@ -13,10 +15,18 @@ This application offers users an easy way to submit review data about their late
 The software initiates a secure connection with the cloud database immediately upon launching.
 
 1. The user is greeted and presented with a list of store categories open for review.
-2. The interface prompts the user for four specific data points: service category, system usability score (1-5), delivery satisfaction rating (1-5), and a referral confirmation (Yes/No).
+2. The interface prompts the user for four specific data points: Category, Ease of Use rating (1-5), Delivery rating (1-5), and a referral confirmation (Yes/No).
+
+![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/81016f5a98a264e5035ed4d0e3d715922032a334/Screenshot3.png)
+   
 3. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
+
+![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/5201bdee735abfb41f4d0ba9714ca38a4cef9a49/Screenshot4.png)
+
 4. Once all responses pass validation, they are transmitted directly to the online spreadsheet.
 5. A statistics overview is instantly compiled, pulling previous database entries to showcase live business performance metrics.
+
+   ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/c6a3542b3875085f309fb2f8b9c5a10cc18af516/Screenshot5.png)
 
 ---
 
@@ -45,14 +55,11 @@ The software initiates a secure connection with the cloud database immediately u
 ### Future Features
 
 - Implement user login profiles to separate admin views from customer views.
-- Add sorting filters to break down rating averages by individual store categories.
-- Build a terminal-based visual chart to display rating trends over time.
-
 ---
 
 ## Data Model
 
-I chose an object-oriented design for this application by building an `ECommerceAnalyser` class as the core structural blueprint.
+I chose an object-oriented design for this application by building an `eCommerceAnalyser` class as the core structural blueprint.
 
 The program creates an instance of this analyzer to store application rules (like accepted retail categories), maintain the cloud worksheet link, and provide specific methods to process user entries and display statistics.
 
