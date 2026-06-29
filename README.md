@@ -18,7 +18,7 @@ The software initiates a secure connection with the cloud database immediately u
 2. The interface prompts the user for four specific data points: Category, Ease of Use rating (1-5), Delivery rating (1-5), and a referral confirmation (Yes/No).
 
 ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/81016f5a98a264e5035ed4d0e3d715922032a334/Screenshot3.png)
-   
+
 3. The program filters and checks each input. If a mistake is found, an error message is printed and the user must try again.
 
 ![image alt](https://github.com/mlamleli85/ecommerce_feedback_analyser/blob/5201bdee735abfb41f4d0ba9714ca38a4cef9a49/Screenshot4.png)
@@ -55,6 +55,7 @@ The software initiates a secure connection with the cloud database immediately u
 ### Future Features
 
 - Implement user login profiles to separate admin views from customer views.
+
 ---
 
 ## Data Model
@@ -78,9 +79,11 @@ I conducted complete manual testing across the codebase to ensure system stabili
 
 ![System Logic Flowchart](flowchart.png)
 
-- Ran the script through a PEP8 compliance linter to ensure formatting is clean.
-- Intentionally entered bad inputs (out-of-range integers, random words, blank spaces) to verify that the validation loops successfully reset.
-- Cross-checked terminal analytics against actual spreadsheet entries to ensure calculations are completely accurate.
+| Feature / Element Tested | Input Given                                                                          | Expected Outcome                                              | Actual Outcome                             | Status   |
+| :----------------------- | :----------------------------------------------------------------------------------- | :------------------------------------------------------------ | :----------------------------------------- | :------- |
+| Code Formatting          | Ran script through PEP8 linter                                                       | Clean formatting with no syntax errors                        | Returned no style warning or errors        | **PASS** |
+| Input Validation         | Intentionally entered bad inouts (out-of-range integers, random words, blank spaces) | System rejects inputs and validation loops successfully reset | Caught invalid data and re-prompted safely | **PASS** |
+| Core Analytics           | Cross-checked terminal analytics against live spreadsheet entries                    | Calculations match the raw data perfectly                     | Math output is completely accurate         | **PASS** |
 
 ### Bugs
 
