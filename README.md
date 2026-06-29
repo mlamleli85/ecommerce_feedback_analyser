@@ -69,6 +69,8 @@ Key methods inside the class include:
 
 I conducted complete manual testing across the codebase to ensure system stability:
 
+![System Logic Flowchart](flowchart.png)
+
 - Ran the script through a PEP8 compliance linter to ensure formatting is clean.
 - Intentionally entered bad inputs (out-of-range integers, random words, blank spaces) to verify that the validation loops successfully reset.
 - Cross-checked terminal analytics against actual spreadsheet entries to ensure calculations are completely accurate.
